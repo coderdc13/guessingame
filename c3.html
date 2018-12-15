@@ -10,17 +10,27 @@
 
 <body>
     <div>
-        Guess a number between 1 and 100...
+      Guess a number between 1 and 100, inclusive...
+    </div>
+    <div id="win" class="container display">
+      <div class="balloon">
+        <div><span>w</span></div>
+        <div><span>i</span></div>
+        <div><span>n</span></div>
+        <div><span>!</span></div>
+      </div>
     </div>
     <ul id="guesses">
-        
+     
     </ul>
     <p id="message">
-
+    
     </p>
+    
     <input onchange="setNumber(this)" id="guess" type="text" />
-    <button onclick="submit()">Guess</button>
-</body>
+    <button id="guessButton" onclick="submit()">Guess</button>
+    <button id="reset" onclick="reset()">Reset</button>
+  </body>
 
 <!-- jsfiddle -->
 
